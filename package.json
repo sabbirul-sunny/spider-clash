@@ -1,0 +1,21 @@
+{
+  "name": "spider-clash",
+  "version": "1.0.0",
+  "description": "Spider Clash - eSports Tournament Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.1.1",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "allowScripts": {
+    "better-sqlite3@13.1.1": true
+  }
+}

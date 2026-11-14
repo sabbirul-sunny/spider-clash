@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team Dashboard | Spider Clash</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <b class="logo">SPIDER CLASH</b>
+  <nav class="pill" aria-label="Main"><a href="#/games" id="nGames" class="on">Games</a><a href="#/my" id="nMy">My games</a></nav>
+  <div class="user"><span id="who"></span><button class="btn ghost sm" id="logout" type="button">Log out</button></div>
+</header>
+<main class="wrap" id="app"><p class="muted">Loading...</p></main>
+<dialog id="matchDlg" aria-label="Match details"></dialog>
+<div id="toast" class="toast" hidden></div>
+<script src="js/images.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

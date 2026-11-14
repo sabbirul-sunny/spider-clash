@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spider Clash | eSports Tournaments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <b class="logo">SPIDER CLASH</b>
+  <nav class="pill" aria-label="Portal">
+    <button id="tabTeam" class="on" type="button">Team portal</button>
+    <button id="tabAdmin" type="button">Admin portal</button>
+  </nav>
+</header>
+<main class="hero">
+  <section>
+    <h1>Pick the tournaments you want to win</h1>
+    <p>Register your team, join multiple games and follow every standing, fixture and live stream in one place. Sixteen teams per bracket. One champion.</p>
+    <div class="hero-photo" id="heroPhoto" role="img" aria-label="Spider Clash arena">
+      <svg viewBox="0 0 200 200" fill="none" stroke="#1f5d1f" stroke-width="2" aria-hidden="true"><path d="M100 10v180M10 100h180M36 36l128 128M164 36L36 164"/><path d="M100 40l45 25 15 35-15 45-45 25-45-25-15-45 15-35z"/><path d="M100 70l25 15 8 15-8 25-25 15-25-15-8-25 8-15z"/></svg>
+    </div>
+  </section>
+  <section class="card auth">
+    <div id="banned" class="notice" role="alert" hidden>Team Banned. Your team cannot log in or take part. Contact the tournament admin.</div>
+    <div id="teamBox">
+      <h2>Team portal</h2>
+      <div class="seg" role="tablist"><button id="sLogin" class="on" type="button">Login</button><button id="sReg" type="button">Register</button></div>
+      <form id="loginForm">
+        <label for="lName">Team name</label><input id="lName" autocomplete="username" required>
+        <label for="lPass">Password</label><input id="lPass" type="password" autocomplete="current-password" required>
+        <p class="msg" id="lMsg" role="alert"></p>
+        <button class="btn green block" type="submit">Enter as team</button>
+      </form>
+      <form id="regForm" hidden>
+        <label for="rName">Team name</label><input id="rName" maxlength="40" required>
+        <label for="rMembers">Team members' names</label><input id="rMembers" maxlength="300" placeholder="Separate names with commas" required>
+        <label for="rManager">Team manager name</label><input id="rManager" maxlength="60" required>
+        <label for="rPass">Password (6+ characters)</label><input id="rPass" type="password" minlength="6" autocomplete="new-password" required>
+        <p class="msg" id="rMsg" role="alert"></p>
+        <button class="btn green block" type="submit">Create team account</button>
+      </form>
+    </div>
+    <form id="adminForm" hidden>
+      <h2>Admin portal</h2>
+      <label for="aName">Admin name</label><input id="aName" autocomplete="username" required>
+      <label for="aPass">Password</label><input id="aPass" type="password" autocomplete="current-password" required>
+      <p class="msg" id="aMsg" role="alert"></p>
+      <button class="btn block" type="submit">Open admin panel</button>
+    </form>
+  </section>
+</main>
+<div id="toast" class="toast" hidden></div>
+<script src="js/images.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
